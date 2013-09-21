@@ -1,0 +1,361 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	style.css
+	
+*/
+
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: "Arimo", arial, verdana, sans-serif;
+font-weight:normal;
+color: #555;
+}
+
+thead th,
+tbody th{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+.menu{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+blockquote{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0 0 0 0;
+color:#000;
+background:#efefef url(img/sns.png);
+font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
+text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+}
+
+#grids-example [class*="top_col_"]{
+	padding:10px;
+}
+.top_event [class*="col_"]{
+	padding:2px;
+}
+
+#wrap{
+width:100%;
+background:#fff;
+margin:30px auto 30px auto;
+padding:0 2%;
+border:1px solid #ccc;
+}
+
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+background:#fff;
+}
+
+	#link-top{
+	display:none;
+	}
+	
+/* NAV BAR*/
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width: 100%;
+background:#000;
+color:#fff;
+z-index:1000;
+}
+
+	.navbar #logo{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0.5em 1em;
+	font-size: 1.7em;
+	color:#efefef;
+	text-decoration:none;
+	}
+	
+	.navbar span{
+	color:#86dc00;
+	}
+	
+	
+	.navbar ul{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}
+	
+		.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+		}
+		
+		.navbar li a{
+		display:inline-block;
+		color:#efefef;
+		padding:1em 1.3em;
+		text-decoration:none;
+		text-transform: uppercase;
+		line-height:100%;
+		font-size: 1.2em;
+		}
+		
+.callout{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+width: 80%;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+box-shadow:inset 0px 0px 15px rgba(0,0,0,0.3);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+border: 1px solid #fff;
+border-radius: 30px;        /* CSS3草案 */  
+-webkit-border-radius: 30px;    /* Safari,Google Chrome用 */  
+-moz-border-radius: 30px;   /* Firefox用 */
+}
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
+	 .callout i.icon-4x{font-size:6em;}
+	 .callout h4{margin-bottom:30px;}
+	 .callout-top{margin:50px 0 0 0;}
+	 .callout p{margin-bottom:0;}
+	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
+
+.callout_top{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+width: 100%;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+box-shadow:inset 0px 0px 15px rgba(0,0,0,0.3);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+border: 1px solid #fff;
+border-radius: 30px;        /* CSS3草案 */  
+-webkit-border-radius: 30px;    /* Safari,Google Chrome用 */  
+-moz-border-radius: 30px;   /* Firefox用 */
+}
+	 
+#mc_embed_signup{
+padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
+}
+
+/* scroll content */
+#sns_account_icon_list {
+	position: absolute;
+	top: 138px;
+	left: 10px;
+}
+
+#sns_account_icon_list_title {
+	color: #555;
+	font-weight: bold;
+	font-size: 19px;
+	text-align: right;
+}
+
+#sns_account_icon_list_box {
+	background: url(http://grad3.ecoloniq.jp/sample/img/patterns_28.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #1a62db), color-stop(0.55, #54a3ee), color-stop(0.55, #54a3ee), color-stop(0.00, #70b6f2));
+	background: url(http://grad3.ecoloniq.jp/sample/img/patterns_28.png) repeat, -webkit-linear-gradient(top, #70b6f2 0%, #54a3ee 55%, #54a3ee 55%, #1a62db 100%);
+	background: url(http://grad3.ecoloniq.jp/sample/img/patterns_28.png) repeat, -moz-linear-gradient(top, #70b6f2 0%, #54a3ee 55%, #54a3ee 55%, #1a62db 100%);
+	background: url(http://grad3.ecoloniq.jp/sample/img/patterns_28.png) repeat, -o-linear-gradient(top, #70b6f2 0%, #54a3ee 55%, #54a3ee 55%, #1a62db 100%);
+	background: url(http://grad3.ecoloniq.jp/sample/img/patterns_28.png) repeat, -ms-linear-gradient(top, #70b6f2 0%, #54a3ee 55%, #54a3ee 55%, #1a62db 100%);
+	background: url(http://grad3.ecoloniq.jp/sample/img/patterns_28.png) repeat, linear-gradient(to bottom, #70b6f2 0%, #54a3ee 55%, #54a3ee 55%, #1a62db 100%);
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+
+	height: 260px;
+	width: 135px;
+	padding:10px;
+	overflow: hidden;
+	box-shadow:inset 0px 0px 10px rgba(0,0,0,0.5);
+	margin-bottom: 5px;
+}
+
+.sns_account_icon {
+	background: #fff;
+	width: 115px;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    word-wrap:break-word;
+    cursor: pointer;
+}
+
+.selected_cancel_bottun {
+	color: #555;
+	font-weight: bold;
+	text-align: center;
+	background: #fff;
+	width: 115px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.account_icon {
+	margin: 5px;
+	border: 1px solid #fff;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.20);
+    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.20);
+}
+.sns_icon {
+	margin: 1px;
+	margin-left: 8px;
+}
+
+.account_name {
+	font-size: 12px;
+	color: #555;
+}
+
+/* Mergin bottom */
+#mergin_bottom{
+	height: 100px;
+}
+
+.event_text{
+	margin:5px 3px 3px 10px;
+}
+.event_img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.event_thumnail{
+	border:5px solid #fff;
+	vertical-align: bottom;
+	border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */
+}
+.event_mentor{
+	color: #555;
+	font-weight: bold;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.event_date{
+	color: #555;
+	font-weight: bold;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.event_title{
+	color: #555;
+	font-weight: bold;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.icon_wrapper{
+	border: 1px solid #ddd;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.30);
+    margin-bottom: 3px;
+}
+.icon_wrapper_list_top{
+	margin-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+.icon_wrapper_list{
+	margin-left: 5px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+div.sns_count{
+	margin-left: 10px;
+	margin-right: 10px;
+	border-style: none none none double;
+	border-color: red;
+	border-width: 8px;
+	padding-left: 8px;
+}
+p.sns_count{
+	font-weight: bold;
+	font-size: 13px;
+	color: #555;
+}
+span.sns_count{
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+	font-family: serif;
+}
+
+.social_icon{
+	margin-top: 35px;
+	margin-left: 8px;
+	margin-bottom: -12px;
+	width: 36px;
+	height: 36px;
+}
+
